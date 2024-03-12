@@ -1,0 +1,163 @@
+#encabezado_contact {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+
+#navegacion_contact {
+    float: right;
+    margin-bottom: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: rgb(255, 123, 171);
+    font-weight: bold;
+    font-size: 1.2em;    
+}   
+
+#navegacion_contact ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+#navegacion_contact li {
+    display: inline-block;
+    margin-left: 40px; 
+}
+
+#fotocontacto {
+    width: 440px;
+    height: 528px;
+}
+
+#img_contact {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 410px; 
+    margin-left: 250px;
+}
+
+#formulario_contact {
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 20px;
+}
+
+#formulario_contact .element {
+    display: block;
+    margin-bottom: 5px; 
+}
+
+fieldset {
+    background-color: rgb(240, 240, 233);
+    height: 500px;
+    border-color: rgb(255, 123, 171);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 123, 171);
+    margin-top: 0;
+}
+
+#formulario_contact h3, h4 {
+    text-align: center;
+    position:relative;
+}
+
+#formulario_contact h3::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -4px; 
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: rgb(255, 123, 171);
+}
+
+#formulario_contact .element[type="text"], [type="email"], [type="tel"] {
+    width: 80%; 
+    margin-left: 3px;
+}
+
+#formulario_contact textarea {
+    width: 80%;
+    height: 100px; 
+    margin-left: 3px;
+}
+
+#formulario_contact .element[for="nombre"], [for="telefono"], [for="remitente"], [for="text"] {
+    font-size: 1em;
+
+}
+
+#formulario_contact input[type="submit"] {
+    margin-top: 10px; 
+    font-size: 1em;
+}
+
+body {
+    background-color: rgb(32, 27, 27);
+}
+
+#lista1, #lista2, #lista3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 360px; 
+    margin-left: 70px;
+    text-align: left;
+    color: white;
+}
+
+
+#lista1 ul li, #lista2 ul li, #lista3 ul li {
+    margin-bottom: 5px; 
+}
+
+ul {
+    list-style-type: none;    
+}
+
+.headlist {
+    list-style-type: circle;
+    color: rgb(255, 123, blue);
+    font-size: 1.2em;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.carrito {
+    width: 30px;
+    height: 30px;
+}
+
+.evento {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+#eventos {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 20px auto; 
+    max-width: 1350px; /* Ajusta el ancho máximo del contenedor de eventos */
+}
+
+#pie_contact {
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+#areadetexto_contact {
+    margin-top:  0;
+
+}
