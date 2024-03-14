@@ -1,12 +1,12 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
     font-size: 18px;
 }
- 
-body{
+
+body {
     background-color: #1a1a17;
     min-width: 400px;
 }
@@ -23,10 +23,10 @@ body{
     height: 100px;
     width: 100px;
     margin-top: 40px;
-    transition:all 0.2s;
+    transition: all 0.2s;
 }
 
-.header .logo img:hover{
+.header .logo img:hover {
     transform: scale(1.2);
 }
 
@@ -34,17 +34,17 @@ body{
     cursor: pointer;
 }
 
-.header .navlinks{
+.header .navlinks {
     list-style: none;
 }
 
 .header .navlinks li {
     display: inline-block;
-    padding:0 20px;  
+    padding: 0 20px;
     margin-left: 20px;
 }
 
-.header .navlinks li:hover{
+.header .navlinks li:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -55,7 +55,7 @@ body{
     text-decoration: none;
 }
 
-.header .navlinks li a:hover{
+.header .navlinks li a:hover {
     color: rgb(218, 226, 224);
 }
 
@@ -71,7 +71,7 @@ body{
     transition: all 0.2s ease 0s;
 }
 
-.header .btn button:hover{
+.header .btn button:hover {
     background-color: #e2f1f8;
     color: rgb(255, 123, 171);
     transform: scale(1.1);
@@ -96,9 +96,9 @@ body{
     display: inline-block;
     margin-top: 90px;
     margin-bottom: 20px;
-    margin-right: 20px;  
-    margin-left: 400px; 
-    
+    margin-right: 20px;
+    margin-left: 400px;
+
 }
 
 #formulario_contact .element {
@@ -113,9 +113,11 @@ fieldset {
     border-color: rgb(255, 123, 171);
 }
 
-p, h3, h4 {
+p,
+h3,
+h4 {
     text-align: center;
-    position:relative;
+    position: relative;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -126,17 +128,19 @@ p, h3, h4 {
 
 
 #formulario_contact h3::after {
-    content: ''; 
-    position: absolute; 
-    bottom: -4px; 
-    left: 0; 
-    width: 100%; 
-    height: 2px; 
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
     background-color: rgb(255, 123, 171);
 }
 
-.element[type="text"], [type="email"], [type="tel"] {
-    width: 80%; 
+.element[type="text"],
+[type="email"],
+[type="tel"] {
+    width: 80%;
     margin-left: 20px;
 }
 
@@ -150,31 +154,35 @@ p, h3, h4 {
 
 #formulario_contact textarea {
     width: 80%;
-    height: 100px; 
+    height: 100px;
     margin-left: 20px;
 }
 
-#formulario_contact .element[for="nombre"], [for="telefono"], [for="remitente"], [for="text"] {
+#formulario_contact .element[for="nombre"],
+[for="telefono"],
+[for="remitente"],
+[for="text"] {
     font-size: 1em;
 
 }
 
 #formulario_contact input[type="submit"] {
-    margin-top: 10px; 
+    margin-top: 10px;
     font-size: 1em;
 }
 
 #formulario_contact label[for="condiciones"] {
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 #formulario_contact input[type="submit"] {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .carrito {
     height: 50px;
     width: 50px;
+    background-size: contain;
 }
 
 
@@ -193,12 +201,12 @@ p, h3, h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100; 
+    height: 100;
     margin-top: 30px;
 }
 
 .titulo h1 {
-    color: rgb(255, 123, 171); 
+    color: rgb(255, 123, 171);
 }
 
 @media screen and (min-width: 768px) {
@@ -240,11 +248,11 @@ p, h3, h4 {
     .foto {
         margin-left: 5%;
         margin-right: 5%;
-        width: 90%; 
+        width: 90%;
     }
 
     #formulario_contact {
         margin-left: 5%;
-        width: 90%; 
+        width: 90%;
     }
 }
