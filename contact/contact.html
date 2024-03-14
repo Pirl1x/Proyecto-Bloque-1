@@ -1,130 +1,80 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>EatHub</title>
-        <link rel="stylesheet" href="../style/main.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatHub</title>
+    <link rel="stylesheet" href="../style/contact_main.css">
+</head>
+<body>
 
-    <body id="inicio">
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/logo.jpg" alt="Logo de la Pastelería">
+        </div>
+
+        <nav>
+          <ul class="navlinks">
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Quienes somos</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="btn"><button>Contacto</button></a>
+        <a href="#" class="btn-cart"><button><img class="carrito" src="../assets/carrito.jpg"</button></a>
+    </header>
+
+    <div class="titulo">
+        <h1>Contacta con nosotros y haznos llegar tus dudas</h1>
+    </div>
+
+    <div class="content">
         
+        <div>
+            <img class="foto" src="../assets/contacto.jpg">
+        </div>
 
-            <div id="encabezado_contact">
-                <h1><img class="logo" src="../assets/logo.jpg" alt="EatHub"/></h1>
-             </div>
-                <!--Fin de la sección de encabezado-->
-            <div id="navegacion_contact">
-                <ul>
-                    <li id="navi01">Productos</li>
-                    <li id="navi02">Servicios</li>
-                    <li id="navi03">Sobre nosotros</li>
-                    <li id="navi04">Contacto</li>
-                    <li id="navi05"><img class="carrito" src="../assets/carrito.jpg" alt="Carrito de Compra"</li>
-                </ul>
-            </div> 
-                <!-- Fin de la sección de navegación -->
-            <div id="areadetexto_contact">
+        <div id="formulario_contact">
+            <fieldset>
+                <p><h3>Importante: en este formulario no se hacen reservas ni pedidos</h3></p>
+                <form name="formulariocontacto" action="">
+                    <label class="element" for="nombre">Nombre y Apellidos:</label>
+                    <input class="element" type="text" name="nombre" />
+                    <label class="element" for="telefono">Teléfono:</label>
+                    <input class="element" type="text" name="telefono" />
+                    <label class="element" for="remitente">Email:</label>
+                    <input class="element" type="text" name="remitente" />
+                    <label class="element" type="nombre">Selecciona tu isla</label>
+                    <select class="element">
+                        <option value="grancanaria">Gran Canaria</option>
+                        <option value="tenerife">Tenerife</option>
+                        <option value="lanzarote">Lanzarote</option>
+                        <option value="lagomera">La Gomera</option>
+                        <option value="elhierro">El Hierro</option>
+                        <option value="fuerteventura">Fuerteventura</option>
+                        <option value="lapalma">La Palma</option>
+                        <option value="lagraciosa">La Graciosa</option>
+                    </select>
+                    <label class="element" for="text">Mensaje:</label>
+                    <textarea class="element" name="text"></textarea>
+                    <label class="element" for="condiciones">
+                        <input type="checkbox" id="condiciones" name="condiciones">
+                        He leído y acepto las condiciones de uso, cookies y política de privacidad
+                    </label>
+                    <input id="submit" type="submit" value="Enviar" />
+                </form>		
+                <p><h4>Estamos a su entera disposición</h4></p>
+            </fieldset>
+        </div>
+    </div>
 
-                <h2>Contacta con nosotros y haznos llegar tus dudas</h2>
-				
-                <div id="img_contact">
-					<img id="fotocontacto" src="../assets/contacto.jpg" alt="Pastelería EatHub"/>
-				</div>
-				
-				    <div id="formulario_contact">
-                        
-                        <fieldset>
-                            
-                            <p><h3>Importante: en éste formulario no se hacen reservas ni pedidos</h3></p>
+    <div id="pie_contact">
+        <address>
+            <p>
+                Copyright 2024 - Pastelería EatHub - Todos los derechos reservados
+            </p>
+        </address>
+    </div>
 
-                            <form  name="formulariocontacto" action="">
-
-                                <label class="element" for="nombre">Nombre y Apellidos:</label>
-                                <input class="element" type="text" name="nombre" />
-                            
-                                <label class="element" for="telefono">Teléfono:</label>
-                                <input class="element" type="text" name="telefono" />
-                            
-                                <label class="element" for="remitente">Email:</label>
-                                <input class="element" type="text" name="remitente" />
-                                
-                                <label class="element" type="nombre">Selecciona tu isla</label>
-                                <select class="element">
-                                    <option value="grancanaria">Gran Canaria</option>
-                                    <option value="tenerife">Tenerife</option>
-                                    <option value="lanzarote">Lanzarote</option>
-                                    <option value="lagomera">La Gomera</option>
-                                    <option value="elhierro">El Hierro</option>
-                                    <option value="fuerteventura">Fuerteventura</option>
-                                    <option value="lapalma">La Palma</option>
-                                    <option value="lagraciosa">La Graciosa</option>
-                                </select>
-                            
-                                <label class="element" for="text">Mensaje:</label>
-                                <textarea class="element" name="text"></textarea>
-
-                                <label class="element" for="condiciones">
-                                    <input type="checkbox" id="condiciones" name="condiciones">
-                                    He leído y acepto las condiciones de uso, cookies y política de privacidad
-                                </label>
-                            
-                                <input id="submit" type="submit" value="Enviar" />
-                            </form>		
-
-                            <p><h4>Estamos a su entera disposición</h4></p>
-
-                        </fieldset>
-                    </div>
-
-                    <div id="eventos">
-                        <img class="evento" src="../assets/reloj.png"/>
-                        <img class="evento" src="../assets/bolsa.png"/>
-                        <img class="evento" src="../assets/cartel.png"/>
-                        <img class="evento" src="../assets/escudo.png"/>
-                    </div>
-               
-                    <div id="lista1">
-                        <ul>
-                            <li class="headlist">Pastelería online</li>
-                            <li>Bollería</li>
-                            <li>Tartas</li>
-                            <li>Queques</li>
-                            <li>Galletas</li>
-                        </ul>
-                    </div>
-                    
-                    <div id="lista2">
-                        <ul>
-                            <li class="headlist">Explora</li>
-                            <li>Blog</li>
-                            <li>Opiniones</li>
-                            <li>Trabaja con nosotros</li>
-                            <li>Preguntas frecuentes</li>
-                        </ul>
-                    </div>
-
-                    <div id="lista3">
-                        <ul>
-                            <li class="headlist">Legal</li>
-                            <li>Aviso legal</li>
-                            <li>Política de compras</li>
-                            <li>Política de cookies</li>
-                            <li>Políticas de privacidad y uso</li>
-                        </ul>
-                    </div>
-            </div>           
-				        <!-- Fin de la sección de areadetexto -->
-
-            <div id="pie_contact">
-                <address>
-                    <p>
-                        Copyright 2024 - Pastelería EatHub - Todos los derechos reservados
-                    </p>
-                </address>
-            </div>
-        
-    </body>
-
+</body>
 </html>
