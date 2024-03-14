@@ -266,13 +266,11 @@ footer {
 
 .shop_box {
   width: 95%;
-  height: 310px;
+  height: 300px;
   background-color: var(--gris-contraste);
   display: block;
   border-radius: 10px;
   margin: 10px;
-  text-align: center;
-  gap: 10%;
 }
 
 .shop_img {
@@ -301,10 +299,6 @@ footer {
   color: var(--fondo);
   border-radius: 5px;
   padding: 5px;
-}
-
-.shop_precio {
-  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 500px) {
