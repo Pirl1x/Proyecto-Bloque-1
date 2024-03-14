@@ -140,15 +140,13 @@ footer {
 }
 
 .shop_box_general {
-    background-color: var(--fondo);
+    background-color: var(--gris-contraste);
     display: flex;
     justify-content: center;
     flex-direction: column;
     }
-}
 
 .shop_box {
-    background-color: var(--gris-contraste);
     display: block;
     border-radius: 10px;
     margin: 10px;
@@ -156,6 +154,10 @@ footer {
 
 .shop_img {
     width: 60%;
+}
+
+.shop_box .shop_text {
+    color:var(--rosa-principal)
 }
 
 @media screen and (min-width: 500px) {
