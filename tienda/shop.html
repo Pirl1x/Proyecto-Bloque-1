@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="../Proyecto-Bloque-1/src/main.js"></script>
+    <script src="/src/main.js"></script>
     <link rel="stylesheet" href="/style/main.css">
 </head>
 
 <body>
     <header>
         <h1>HEADER</h1>
+        <div class="carrito">
+            <div class="carrito_elemento">
+                <ul>
+                    <li>Precio: <span></span></li>
+                    <li>Nombre: <span></span></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <div class="shop_principal"> 
@@ -25,7 +33,7 @@
                 </div>
                 <div class="shop_produc_name shop_text">Croissant</div>
                 <div class="shop_precio shop_text">12,00€</div>
-                <bottom class="shop_boton_añadir"></bottom>
+                <bottom class="shop_boton_add" onclick="addCart(this)"  data-name="Croissant" data-category="Bolleria" data-price="12.00">Add Cart</bottom>
 
             </div>
             <div class="shop_box">
@@ -34,7 +42,7 @@
                 </div>
                 <div class="shop_produc_name shop_text">Croissant</div>
                 <div class="shop_precio shop_text">12,00€</div>
-                <bottom class="shop_boton_añadir"></bottom>
+                <bottom class="shop_boton_add" onclick="addCart(this)"  data-name="Croissant" data-category="Bolleria" data-price="12.00">Add Cart</bottom>
             </div>
             <div class="shop_box">
                 <img class="shop_img" src="/img/about_us/obrador.jpg">
@@ -42,7 +50,7 @@
                 </div>
                 <div class="shop_produc_name shop_text">Croissant</div>
                 <div class="shop_precio shop_text">12,00€</div>
-                <bottom class="shop_boton_añadir"></bottom>
+                <bottom class="shop_boton_add" onclick="addCart(this)"  data-name="Croissant" data-category="Bolleria" data-price="12.00">Add Cart</bottom>
             
             </div>
             <div class="shop_box">
@@ -51,7 +59,7 @@
                 </div>
                 <div class="shop_produc_name shop_text">Croissant</div>
                 <div class="shop_precio shop_text">12,00€</div>
-                <bottom class="shop_boton_añadir"></bottom>
+                <bottom class="shop_boton_add" onclick="addCart(this)"  data-name="Croissant" data-category="Bolleria" data-price="12.00">Add Cart</bottom>
             
             </div>
             <div class="shop_box">
@@ -60,7 +68,7 @@
                 </div>
                 <div class="shop_produc_name shop_text">Croissant</div>
                 <div class="shop_precio shop_text">12,00€</div>
-                <bottom class="shop_boton_añadir"></bottom>
+                <bottom class="shop_boton_add" onclick="addCart(this)"  data-name="Croissant" data-category="Bolleria" data-price="12.00">Add Cart</bottom>
             
             </div>
         </div>
