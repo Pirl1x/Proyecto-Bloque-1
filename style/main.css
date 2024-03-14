@@ -1,6 +1,6 @@
 :root {
     --fondo: #0D0D0D;
-    --rosa-principal: #FE7AAA;
+    --rosa-principal:#FF7BAB;
     --gris-contraste: #F5F5F5;
 }
 
@@ -10,29 +10,28 @@ body {
 
 header {
     color: var(--rosa-principal);
-    height: 300px;
+    height: 30px;
 }
 
-footer {
-    color: var(--rosa-principal);
-}
+
 .about_row {
     display: flex;
     justify-items: center;
+    flex-direction: column;
 }
 
 .about_titulo_principal {
     color: var(--rosa-principal);
     display: flex;
-    justify-items: end;
-    padding: 10px;
+    justify-content: center;
+    padding: 20px;
 }
 
 .about_titulo_principal_colum {
     color: var(--rosa-principal);
     display: flex;
-    justify-items: center;
-    padding-top: 10px;
+    justify-content: space-around;
+
 }
 
 .about_textointermedio {
@@ -44,11 +43,14 @@ footer {
 .aboutus_text{
     color:var(--gris-contraste);
     display: flex;
+    padding: 20px;
 }
 
-.about_img {
-    width: 200px;
-   
+.about_img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;   
 }
 
 .about_imgcolum {
@@ -71,5 +73,104 @@ footer {
     text-align: justify;
 }
 
+hr {
+    width: 60px;
+    color:rgb(255, 123, 171);
+}
 
 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    /* position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}
+
+.listas {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+/* .lista1 {
+    display: inline-block;
+    position: relative;
+    top: 95%;
+    left: 7.5%;
+}
+
+.lista2 {
+    display: inline-block;
+    position: relative;
+    top: 95%;
+    left: 32.5%;
+}
+
+.lista3 {
+    display: inline-block;
+    position: relative;
+    top: 95%;
+    left: 57.5%;
+} */
+
+.lista1>p {
+    color: rgb(255, 123, 171);
+    margin-left: 0%;
+}
+
+.lista2>p {
+    color: rgb(255, 123, 171);
+}
+
+.lista3>p {
+    color: rgb(255, 123, 171);
+}
+
+.headlist {
+    color: rgb(255, 123, 171);
+
+}
+
+.shop_principal{
+    background-color:var(--rosa-principal);
+    
+
+}
+
+.shop_box_general {
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+}
+
+.shop_box {
+    background-color: var(--gris-contraste);
+    display: block;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.shop_img {
+    width: 60%;
+}
+
+@media screen and (min-width: 500px) {
+    .about_row {
+            flex-direction: row;
+    }
+
+    .listas {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+}
