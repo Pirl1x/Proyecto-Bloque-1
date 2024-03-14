@@ -75,7 +75,7 @@ header {
 
 hr {
     width: 60px;
-    color:rgb(255, 123, 171);
+    background-color:rgb(255, 123, 171);
 }
 
 
@@ -132,6 +132,124 @@ footer {
     color: rgb(255, 123, 171);
 
 }
+
+.contenedor-imagen {
+    position: relative;
+    background-size: contain;
+}
+
+.contenedor-imagen>img {
+    width: 100%;
+    height: auto;
+}
+
+.links {
+    position: absolute;
+    top: 15%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.links>img {
+    width: 10%;
+    height: 50%;
+}
+
+.links>h1 {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.carrito {
+    position: absolute;
+    background-size: contain;
+    top: 10%;
+    left: 78%;
+}
+
+.carrito>img {
+    width: 20%;
+    height: auto;
+}
+
+.titulo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.titulo>h1 {
+    color: rgb(255, 123, 171);
+}
+
+.descripcion {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.descripcion>h3 {
+    width: 50%;
+    color: white;
+    text-align: justify;
+}
+
+.redes {
+    position: absolute;
+    top: 15%;
+    left: 85%;
+}
+
+.redes>img {
+    width: 30%;
+    height: 100%;
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+}
+
+.logo>img {
+    width: 60%;
+    height: auto;
+}
+
+.link:hover {
+    scale: 105%;
+    text-decoration: underline;
+}
+
+.link>a {
+    text-decoration: none;
+    color: white;
+}
+
+.carrito:hover {
+    scale: 110%;
+}
+
+.instagram:hover {
+    scale: 110%;
+}
+
+.facebook:hover {
+    scale: 110%;
+}
+
+.tiktok:hover {
+    scale: 110%;
+}
+
+.pinterest:hover {
+    scale: 110%;
+}
+
 
 .shop_principal{
     background-color:var(--rosa-principal);
