@@ -89,42 +89,42 @@ footer {
     width: 100%;
 }
 
-.listas {
+.about_listas {
     display: flex;
     justify-items: center;
     flex-direction: column;
 }
-/* .lista1 {
+/* .about_lista1 {
     display: inline-block;
     position: relative;
     top: 95%;
     left: 7.5%;
 }
 
-.lista2 {
+.about_lista2 {
     display: inline-block;
     position: relative;
     top: 95%;
     left: 32.5%;
 }
 
-.lista3 {
+.about_lista3 {
     display: inline-block;
     position: relative;
     top: 95%;
     left: 57.5%;
 } */
 
-.lista1>p {
+.about_lista1>p {
     color: rgb(255, 123, 171);
     margin-left: 0%;
 }
 
-.lista2>p {
+.about_lista2>p {
     color: rgb(255, 123, 171);
 }
 
-.lista3>p {
+.about_lista3>p {
     color: rgb(255, 123, 171);
 }
 
