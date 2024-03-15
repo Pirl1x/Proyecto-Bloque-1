@@ -1,3 +1,6 @@
+body{
+  background-color: #000000;
+}
 .contenedor-imagen {
   position: relative;
   background-size: contain;
@@ -144,7 +147,9 @@
   width: 20%;
   height: auto;
 }
-
+.listas{
+  background-color: white;
+}
 .lista1 {
   display: inline-block;
   position: relative;
@@ -196,111 +201,51 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
 .link:hover {
   scale: 105%;
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(255, 123, 171) ;  
 }
-
 .link>a {
   text-decoration: none;
   color: white;
 }
-
 .carrito:hover {
   scale: 110%;
 }
-
 .instagram:hover {
   scale: 110%;
 }
-
 .facebook:hover {
   scale: 110%;
 }
-
 .tiktok:hover {
   scale: 110%;
 }
-
 .pinterest:hover {
   scale: 110%;
 }
-
 .imgreloj:hover {
   scale: 110%;
 }
-
 .imgbolsa:hover {
   scale: 110%;
 }
-
 .imgcartel:hover {
   scale: 110%;
 }
-
 .imgverificado:hover {
   scale: 110%;
 }
-
 .lista1-1:hover {
   scale: 105%;
 }
-
 .lista2-1:hover {
   scale: 105%;
 }
-
 .lista3-1:hover {
   scale: 105%;
 }
-
-.shop-navbar {
-  background-color: black;
-}
-
-.shop-titulo {
-  position: relative;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 20px;
-}
-
-.shop-titulo>h1 {
-  color: rgb(255, 123, 171);
-
-}
-
-.shop-links {
-  position: absolute;
-  top: 10%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.shop-links>h1 {
-  display: inline-block;
-  margin: 0 10px;
-  color: white;
-}
-
-.shop-links>a {
-  text-decoration: none;
-  color: white;
-}
-
-.shop-carrito {
-  position: absolute;
-  background-size: contain;
-  top: 10%;
-  left: 78%;
-}
-
 .carrito>img {
   width: 20%;
   height: auto;
