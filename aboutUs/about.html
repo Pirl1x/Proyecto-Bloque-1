@@ -10,6 +10,10 @@
 
 <body>
     <header>
+        <div class="about_logo"><a href="./index.html"></a>
+            <img src="/assets/logo.jpg" alt="logo">
+        </div>
+        <div class="alert" style="display: none;">Producto Añadido correctamente</div>
         <section class="navbar">
             <div class="contenedor-imagen">
                 <div class="about_links">
@@ -19,21 +23,24 @@
                     <div class="link"><a href="./contact/contact.html">Contacto</a></div>
                 </div>
             </div>
-            <div class="about_carrito carrito">
+            <div class="carro" onclick="showCart()">
                 <img src="/assets/carrito-sf.png" alt="carrito">
             </div>
-            
-            <!-- <div class="redes">
-                <img class="instagram" src="/assets/insta.png" alt="instagram">
-                <img class="tiktok" src="/assets/tiktok.png" alt="tiktok">
-                <img class="pinterest" src="/assets/pinte.png" alt="pinterest">
-                <img class="facebook" src="/assets/face.png" alt="facebook">
-            </div> -->
-            <div class="logo"><a href="./index.html"></a>
-                <img src="/assets/logo.jpg" alt="logo">
+            <div class="about_carrito carrito" style="display: none;">
+                <button class="about_carrito_close" onclick="hideCart()">X</button>
+                <div class="about_carrito_total">Total: 0.00€</div>
             </div>
+    
+    
+            <!-- <div class="redes">
+                    <img class="instagram" src="/assets/insta.png" alt="instagram">
+                    <img class="tiktok" src="/assets/tiktok.png" alt="tiktok">
+                    <img class="pinterest" src="/assets/pinte.png" alt="pinterest">
+                    <img class="facebook" src="/assets/face.png" alt="facebook">
+                </div> -->
+    
         </section>
-
+    
     </header>
     <main id="aboutus_boxprincipal">
         <div class="about_titulo_principal"> Nuestra Trayectoria</div>
