@@ -352,8 +352,8 @@ footer {
 
 @media screen and (min-width: 500px) {
   .about_row {
-    flex-direction: row;
-  }
+        flex-wrap: wrap;
+    }
 
   .about_listas {
     flex-direction: row;
