@@ -8,16 +8,21 @@ body {
   background-color: var(--fondo);
 }
 
-header {
-  color: var(--rosa-principal);
-  height: 30px;
-}
 
 
 .about_row {
   display: flex;
   justify-items: center;
   flex-direction: column;
+}
+
+header {
+    color: var(--rosa-principal);
+    height: 20%;
+}
+
+.superior {
+    flex-wrap: wrap;
 }
 
 .about_titulo_principal {
@@ -80,8 +85,8 @@ hr {
 
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--fondo);
+  color: var(--gris-contraste);
   text-align: center;
   padding: 3px;
   /* position: fixed;*/
@@ -90,9 +95,14 @@ footer {
 }
 
 .about_listas {
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
+    background-color: var(--gris-contraste);
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.about_lista>h3 {
+    color:var(--fondo);
 }
 
 /* .about_lista1 {
@@ -116,16 +126,8 @@ footer {
     left: 57.5%;
 } */
 
-.about_lista1>p {
-  color: rgb(255, 123, 171);
-  margin-left: 0%;
-}
 
-.about_lista2>p {
-  color: rgb(255, 123, 171);
-}
-
-.about_lista3>p {
+.about_lista>p {
   color: rgb(255, 123, 171);
 }
 
@@ -154,6 +156,14 @@ footer {
   padding: 20px;
 }
 
+.about_links {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 .links>img {
   width: 10%;
   height: 50%;
@@ -164,16 +174,22 @@ footer {
   margin: 0 10px;
 }
 
-.carrito {
-  position: absolute;
+.about_carrito.carrito {
+  position: fixed;
   background-size: contain;
+  background-color: var(--gris-contraste);
   top: 10%;
   left: 78%;
 }
 
-.carrito>img {
-  width: 20%;
-  height: auto;
+.carro {
+    position: relative;
+    width: 7%;
+    left: 91%;
+}
+
+.carro>img {
+    width: 95%;
 }
 
 .titulo {
@@ -210,10 +226,13 @@ footer {
   display: block;
 }
 
-.logo {
-  position: absolute;
-  top: 5%;
-  left: 2.5%;
+.about_logo {
+    position: absolute;
+    width: 10%;
+}
+
+.about_logo>img {
+    width: 80%;
 }
 
 .logo>img {
@@ -301,12 +320,32 @@ footer {
   padding: 5px;
 }
 
+.about_navmid {
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.about_img {
+    color: white;
+    display: inline-block;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.about_text_footer {
+    font-size: 97%;
+}
+
 @media screen and (min-width: 500px) {
   .about_row {
     flex-direction: row;
   }
 
-  .listas {
+  .about_listas {
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
@@ -316,5 +355,6 @@ footer {
     flex-direction: row;
   }
 }
+ 
 
 @media screen and (min-width: 1025px) {}

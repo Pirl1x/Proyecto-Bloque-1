@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="/src/main.js"></script>
     <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/about.css">
+
 
 </head>
 
 <body>
     <header>
-        <h1>HEADER</h1>
-        <div class="carrito" style="display: none;">
+        <div class="about_logo"><a href="./index.html"></a>
+            <img src="/assets/logo.jpg" alt="logo">
         </div>
+        <div class="alert" style="display: none;">Producto Añadido correctamente</div>
+        <section class="navbar">
+            <div class="contenedor-imagen">
+                <div class="about_links">
+                    <div class="link"><a href="./tienda/shop.html">Productos |</a></div>
+                    <div class="link">Servicios |</div>
+                    <div class="link"><a href="./aboutUs/about.html">Quienes somos |</a></div>
+                    <div class="link"><a href="./contact/contact.html">Contacto</a></div>
+                </div>
+            </div>
+            <div class="carro" onclick="showCart()">
+                <img src="/assets/carrito-sf.png" alt="carrito">
+            </div>
+            <div class="about_carrito carrito" style="display: none;">
+                <button class="about_carrito_close" onclick="hideCart()">X</button>
+                <div class="about_carrito_total">Total: 0.00€</div>
+            </div>
+           
+
+            <!-- <div class="redes">
+                <img class="instagram" src="/assets/insta.png" alt="instagram">
+                <img class="tiktok" src="/assets/tiktok.png" alt="tiktok">
+                <img class="pinterest" src="/assets/pinte.png" alt="pinterest">
+                <img class="facebook" src="/assets/face.png" alt="facebook">
+            </div> -->
+            
+        </section>
+
     </header>
     <main>
         <div class="shop_principal">
@@ -24,14 +55,15 @@
         </div>
         <div class="shop_box_general">
             <div class="shop_box">
-                <div  class="shop_img">
+                <div class="shop_img">
                     <img src="/img/productos/boda.jpg">
                 </div>
                 <div class="shop_categoria shop_text">Tartas y Postres
                 </div>
                 <div class="shop_produc_name shop_text">Tarta Personalizada</div>
                 <div class="shop_precio shop_text">120,00€</div>
-                <bottom class="shop_boton_anadir" data-name="Tarta Personalizada" data-price="120,00€" data-category="Tarta" onclick="addCart(this)">Añadir Producto</bottom>
+                <bottom class="shop_boton_anadir" data-name="Tarta Personalizada" data-price="120.00"
+                    data-category="Tarta" onclick="addCart(this)">Añadir Producto</bottom>
 
             </div>
             <div class="shop_box">
@@ -42,7 +74,8 @@
                 </div>
                 <div class="shop_produc_name shop_text">Croissant</div>
                 <div class="shop_precio shop_text">2,00€</div>
-                <bottom class="shop_boton_anadir"data-name="Croissant" data-price="2,00€" data-category="Bolleria" onclick="addCart(this)">Añadir Producto</bottom>
+                <bottom class="shop_boton_anadir" data-name="Croissant" data-price="2.00" data-category="Bolleria"
+                    onclick="addCart(this)">Añadir Producto</bottom>
             </div>
             <div class="shop_box">
                 <div class="shop_img">
@@ -52,7 +85,8 @@
                 </div>
                 <div class="shop_produc_name shop_text">Donuts Sabores</div>
                 <div class="shop_precio shop_text">12,00€</div>
-                <bottom class="shop_boton_anadir"data-name="Donut Sabores" data-price="12,00€" data-category="Bolleria" onclick="addCart(this)">Añadir Producto</bottom>
+                <bottom class="shop_boton_anadir" data-name="Donut Sabores" data-price="12.00" data-category="Bolleria"
+                    onclick="addCart(this)">Añadir Producto</bottom>
 
             </div>
             <div class="shop_box">
@@ -63,7 +97,8 @@
                 </div>
                 <div class="shop_produc_name shop_text">Tarta de Manzana</div>
                 <div class="shop_precio shop_text">25,00€</div>
-                <bottom class="shop_boton_anadir"data-name="Tarta Manzana" data-price="25,00€" data-category="Tarta" onclick="addCart(this)">Añadir Producto</bottom>
+                <bottom class="shop_boton_anadir" data-name="Tarta Manzana" data-price="25.00" data-category="Tarta"
+                    onclick="addCart(this)">Añadir Producto</bottom>
 
             </div>
             <div class="shop_box">
@@ -74,15 +109,34 @@
                 </div>
                 <div class="shop_produc_name shop_text">Napolitanas Surtidas</div>
                 <div class="shop_precio shop_text">35,00€</div>
-                <bottom class="shop_boton_anadir"data-name="Napolitanas Surtidas" data-price="35,00€" data-category="Bolleria" onclick="addCart(this)">Añadir Producto</bottom>
+                <bottom class="shop_boton_anadir" data-name="Napolitanas Surtidas" data-price="35.00"
+                    data-category="Bolleria" onclick="addCart(this)">Añadir Producto</bottom>
 
             </div>
         </div>
     </main>
     <footer>
+        <section class="about_navmid">
+            <div class="about_img">
+                <img src="/assets/reloj.png" alt="reloj">
+                <h2 class="about_text_footer">Envio inmediato o programado</h2>
+            </div>
+            <div class="about_img">
+                <img src="/assets/bolsa.png" alt="bolsa">
+                <h2 class="about_text_footer">Recogida en tienda</h2>
+            </div>
+            <div class="about_img">
+                <img src="/assets/cartel.png" alt="cartelopen">
+                <h2 class="about_text_footer">Abierto de lunes a domingo</h2>
+            </div>
+            <div class="about_img">
+                <img src="/assets/escudo.png" alt="verificado">
+                <h2 class="about_text_footer">Pago rápido y 100% seguro</h2>
+            </div>
+        </section>
 
-        <div class="listas">
-            <div class="lista1">
+        <div class="about_listas">
+            <div class="about_lista">
                 <p>__</p>
                 <h1 class="headlist">Pastelería online</h1>
                 <h3>Bollería</h3>
@@ -91,7 +145,7 @@
                 <h3>Galletas</h3>
             </div>
 
-            <div class="lista2">
+            <div class="about_lista">
                 <p>__</p>
                 <h1 class="headlist">Explora</h1>
                 <h3>Blog</h3>
@@ -100,7 +154,7 @@
                 <h3>Preguntas frecuentes</h3>
             </div>
 
-            <div class="lista3">
+            <div class="about_lista">
                 <p>__</p>
                 <h1 class="headlist">Legal</h1>
                 <h3>Aviso legal</h3>
