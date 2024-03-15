@@ -168,12 +168,12 @@ footer {
   position: absolute;
   background-size: contain;
   top: 10%;
-  left: 78%;
+  left: 85%;
 }
 
 .carrito>img {
-  width: 20%;
-  height: auto;
+  width: 50px;
+  height: 40px;
 }
 
 .titulo {
@@ -217,7 +217,7 @@ footer {
 }
 
 .logo>img {
-  width: 60%;
+  width: 40%;
   height: auto;
 }
 
@@ -318,3 +318,9 @@ footer {
 }
 
 @media screen and (min-width: 1025px) {}
+
+header {
+  color: var(--rosa-principal);
+  height: 30px;
+  padding-top: 70px; /* Ajusta este valor según lo necesites para bajar el encabezado */
+}

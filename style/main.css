@@ -80,7 +80,7 @@ hr {
 
 
 footer {
-  background-color: #333;
+  background-color: #00060a;
   color: #fff;
   text-align: center;
   padding: 3px;
@@ -164,18 +164,6 @@ footer {
   margin: 0 10px;
 }
 
-.carrito {
-  position: absolute;
-  background-size: contain;
-  top: 10%;
-  left: 78%;
-}
-
-.carrito>img {
-  width: 20%;
-  height: auto;
-}
-
 .titulo {
   position: absolute;
   top: 25%;
@@ -212,7 +200,7 @@ footer {
 
 .logo {
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 2.5%;
 }
 
@@ -229,10 +217,6 @@ footer {
 .link>a {
   text-decoration: none;
   color: white;
-}
-
-.carrito:hover {
-  scale: 110%;
 }
 
 .instagram:hover {
@@ -352,8 +336,8 @@ footer {
 }
 
 .navlinks li {
- 
-  margin-left: 350px;
+  text-decoration: none;
+  margin-left: 310px;
 }
 
 
@@ -362,5 +346,23 @@ main {
   margin-top: 130px; 
   padding: 30; 
   background-color: #686464; /* Color de fondo del contenido principal */
+}
+
+ .carrito {
+  position: absolute;
+  top: 5%; /* Ajusta este valor según lo necesites para mover el botón hacia arriba */
+  left: 85%;
+  background-color: var(--rosa-principal);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.carrito img {
+  width: 20%;
+  height: auto;
+}
+
+.carrito:hover {
+  scale: 110%;
 }
 
