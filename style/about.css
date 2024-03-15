@@ -323,9 +323,8 @@ footer {
 .about_navmid {
     background-color: var(--fondo);
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-items: center;
+    flex-direction: column;
 }
 
 .about_img {
@@ -340,6 +339,17 @@ footer {
     font-size: 97%;
 }
 
+.alert {
+    position: absolute;
+    background-color: var(--rosa-principal);
+    color: var(--fondo);
+    border-radius: 5px;
+    top: 50%;
+    margin-left: 34%;
+    width: 228px;
+    height: 69px;
+}
+
 @media screen and (min-width: 500px) {
   .about_row {
     flex-direction: row;
@@ -352,6 +362,10 @@ footer {
   }
 
   .shop_box_general {
+    flex-direction: row;
+  }
+
+  .about_navmid {
     flex-direction: row;
   }
 }
