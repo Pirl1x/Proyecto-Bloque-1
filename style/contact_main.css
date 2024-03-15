@@ -2,13 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-    font-size: 18px;
 }
 
 body {
-    background-color: #1a1a17;
+    background-color: #000000;
     min-width: 400px;
+}
+.navlinks{
+    color: white;
+}
+.navlinks > h1 {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
 }
 
 .header {
@@ -34,25 +40,9 @@ body {
     cursor: pointer;
 }
 
-.header .navlinks {
-    list-style: none;
-}
-
-.header .navlinks li {
-    display: inline-block;
-    padding: 0 20px;
-    margin-left: 20px;
-}
-
 .header .navlinks li:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
-
-.header .navlinks a {
-    font-size: 600;
-    color: rgb(255, 123, 171);
-    text-decoration: none;
 }
 
 .header .navlinks li a:hover {
@@ -79,7 +69,7 @@ body {
 
 .foto {
     height: 600px;
-    width: 550;
+    width: 550px;
     margin-top: 90px;
     margin-left: 280px;
     border: 2px solid rgb(255, 123, 171);
@@ -191,10 +181,12 @@ h4 {
     margin-top: 50px;
     bottom: 0;
     width: 100%;
-    padding: 0;
+    padding: 3px;
     text-align: center;
     color: white;
     font-size: 1.2em;
+    background-color: #000000;
+    bottom: 0;
 }
 
 .titulo {
@@ -256,3 +248,164 @@ h4 {
         width: 90%;
     }
 }
+.navmid {
+    background-color: #222222;
+    margin: 0 auto;
+  }
+  
+  .imgreloj {
+    color: white;
+    display: inline-block;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;}
+  
+  .imgreloj>img {
+    width: 20%;
+    height: auto;
+  }
+  
+  .imgbolsa {
+    top: 50%;
+    left: 10%;
+    color: white;
+    display: inline-block;
+    margin-right: 5%;
+    text-align: center;
+  }
+  
+  .imgbolsa>img {
+    width: 20%;
+    height: auto;
+  }
+  
+  .imgcartel {
+    top: 50%;
+    left: 10%;
+    color: white;
+    display: inline-block;
+    margin-right: 5%;
+    text-align: center;
+  }
+  
+  .imgcartel>img {
+    width: 20%;
+    height: auto;
+  }
+  
+  .imgverificado {
+    top: 50%;
+    left: 10%;
+    color: white;
+    display: inline-block;
+    margin-right: 5%;
+    text-align: center;
+  }
+  
+  .imgverificado>img {
+    width: 20%;
+    height: auto;
+  }
+  
+  .lista1 {
+    display: inline-block;
+    position: relative;
+    top: 95%;
+    left: 7.5%;
+  }
+  
+  .lista2 {
+    display: inline-block;
+    position: relative;
+    top: 95%;
+    left: 32.5%;
+  }
+  
+  .lista3 {
+    display: inline-block;
+    position: relative;
+    top: 95%;
+    left: 57.5%;
+  }
+  
+  .lista1>p {
+    color: rgb(255, 123, 171);
+    margin-left: 0%;
+  }
+  
+  .lista2>p {
+    color: rgb(255, 123, 171);
+  }
+  
+  .lista3>p {
+    color: rgb(255, 123, 171);
+  }
+  
+  .headlist {
+    color: rgb(255, 123, 171);
+  }
+  
+  .headlist:hover {
+    text-decoration: underline;
+    scale: 105%;
+  }
+  
+  footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    bottom: 0;
+    width: 100%;
+  }
+  .link:hover {
+    scale: 105%;
+    text-decoration: underline;
+  }
+  .link>a {
+    text-decoration: none;
+    color: white;
+  }
+  .carrito:hover {
+    scale: 110%;
+  }
+  .instagram:hover {
+    scale: 110%;
+  }
+  .facebook:hover {
+    scale: 110%;
+  }
+  .tiktok:hover {
+    scale: 110%;
+  }
+  .pinterest:hover {
+    scale: 110%;
+  }
+  .imgreloj:hover {
+    scale: 110%;
+  }
+  .imgbolsa:hover {
+    scale: 110%;
+  }
+  .imgcartel:hover {
+    scale: 110%;
+  }
+  .imgverificado:hover {
+    scale: 110%;
+  }
+  .lista1-1:hover {
+    scale: 105%;
+  }
+  .lista2-1:hover {
+    scale: 105%;
+  }
+  .lista3-1:hover {
+    scale: 105%;
+  }
+  .carrito>img {
+    width: 20%;
+    height: auto;
+  }
+.listas{
+    background-color: white;
+}  
